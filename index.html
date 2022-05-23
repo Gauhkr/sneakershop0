@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SNEAKERSHOP | online store</title>
+
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <!--- Google Fonts --->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!--- Stylesheets --->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <!--- Bootstrap scripts --->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <header>
+    <!--- Nav Bar --->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="images/44.png" width="150px"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link nav-link-dark" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+              Products
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="">Sneakers</a>
+              <a class="dropdown-item" href="">Clothing</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacts">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Account</a>
+          </li>
+          <li class="nav-item">
+           <form class="search" action="action_page.php">
+           <input type="text" placeholder="Search.." name="search">
+           <button type="submit"><i class="fa fa-search"></i></button>
+           </form>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href=""><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row" style="background: radial-gradient(#fff, #565555);">
+        <div class="col-lg-6">
+          <h1 id="keyboard"><strong><span class="auto-type"></span></strong></h1>
+          <p>
+            <font size="4">
+              <p> The attitude of kindness is everyday stuff like a great pair of sneakers.
+                Not frilly. Not fancy. Just plain and comfortable.</p>
+            </font>
+          </p>
+          <button type="button" class="btn btn-dark">Explore Now &#8594;</button>
+        </div>
+        <div class="col-lg-6">
+          <img src="images/b0.png" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </header>
+
+<br>
+<br>
+<br>
+
+  <div class="products">
+    <center>
+      <h2 id="products"> Products</h2>
+      <br>
+    </center>
+    <div class="sneakers">
+      <h3 id="sneakers">Sneakers</h3>
+      <div class="row">
+        <div class="col" align="center">
+          <img src="images/114.png">
+          <h4>New Balance 327</h4>
+          <p id="demo"></p>
+        </div>
+        <div class="col" align="center">
+          <img src="images/111.jpg">
+          <h4>Nike Air Jordan 1 High</h4>
+          <p>28.400KZT</p>
+        </div>
+        <div class="col" align="center">
+          <img src="images/115.jpg">
+          <h4>Converse Chuck 70</h4>
+          <p id="conv"></p>
+        </div>
+        <div class="col" align="center">
+          <img src="images/112.jpg">
+          <h4>Adidas 2k boost</h4>
+          <p>25.990KZT</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" align="center">
+          <img src="images/101.jpg">
+          <h4>Nike Air Max 1 Patta <br> Waves Noise Aqua</h4>
+          <p>23.500KZT</p>
+        </div>
+        <div class="col" align="center">
+          <img src="images/104.png">
+          <h4>Nike Air Force 1 Low <br> Lux "Pearl White"</h4>
+          <p>28.990KZT</p>
+        </div>
+        <div class="col" align="center">
+          <img src="images/102.jpg">
+          <h4>Nike Air Force 1 <br> Low Rock and Roll<br> </h4>
+          <p>25.900KZT</p>
+        </div>
+        <div class="col" align="center">
+          <img src="images/106.jpg">
+          <h4>Nike Air Force 1 <br> Mid </h4>
+          <p>25.400KZT</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" align="center">
+          <img src="images/1.jpg">
+          <h4>Adidas Niteball</h4>
+          <p>26.500KZT</p>
+        </div>
+        <div class="col" align="center">
+          <img src="images/2.jpg">
+          <h4>New Balance 550</h4>
+          <p>26.990KZT</p>
+        </div>
+        <div class="col" align="center">
+          <img src="images/103.jpg">
+          <h4>Adidas Retropy</h4>
+          <p>26.990KZT</p>
+        </div>
+        <div class="col" align="center">
+          <img src="images/3.jpg">
+          <h4>New Balance 990 V4</h4>
+          <p>26.990KZT</p>
+        </div>
+      </div>
+    </div>
+    <div class="clothing">
+      <h3 id="clothing">Clothing</h3>
+      <div class="row">
+        <div class="col" align="center">
+          <img src="images/20.jpg">
+          <h4>Solid Color Hoodie</h4>
+          <p>14.900KZT</p>
+        </div>
+        <div class="col" align="center">
+          <img src="images/21.jpg">
+          <h4>Tights Nike</h4>
+          <p>16.900KZT</p>
+        </div>
+        <div class="col" align="center">
+          <img src="images/23.jpg">
+          <h4>Tracksuit Adidas</h4>
+          <p>26.400KZT</p>
+        </div>
+        <div class="col" align="center">
+          <img src="images/22.jpg">
+          <h4>Hoodie KITH x Coca Cola</h4>
+          <p>19.990KZT</p>
+        </div>
+      </div>
+      <nav aria-label="Page navigation">
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <center><h3>The Best Sneaker Brands Will Make You Swear Off All Other Shoes for Good</h3></center>
+  <br>
+  <table class="center" style="width:100%">
+  <tr>
+    <td>1. Nike</td>
+    <td>7. Puma</td>
+    <td>13. Salamon</td>
+  </tr>
+  <tr>
+    <td>2. Adidas</td>
+    <td>8. Jordan Brand</td>
+    <td>14. Common Projects</td>
+  </tr>
+  <tr>
+    <td>3. Converse</td>
+    <td>9. Yeezy</td>
+    <td>15. Luxury Designers</td>
+  </tr>
+  <tr>
+    <td>4. Reebok</td>
+    <td>10. Asics</td>
+    <td>16. On Running</td>
+  </tr>
+  <tr>
+    <td>5. New Balance</td>
+    <td>11. Saucony</td>
+    <td>17. Hoka One One</td>
+  </tr>
+  <tr>
+    <td>6. Vans</td>
+    <td>12. Veja</td>
+  </tr>
+  </table>
+  <div class="link">
+    <strong><p ondblclick="myLink()" style="text-align:left;">Double-click to see more details</p></strong>
+    <p id="demon"></p>
+  </div>
+    <div class="row-0303">
+    <div class="col-3">
+      <img src="images/0101.jpg">
+      <img src="images/0303.jpg">
+      <img src="images/0404.jpg">
+      <img src="images/0606.webp">
+    </div>
+    <div class="col-3">
+      <img src="images/0606.webp">
+      <img src="images/0404.jpg">
+      <img src="images/0303.jpg">
+      <img src="images/0101.jpg">
+    </div>
+    <div class="col-3">
+      <img src="images/0101.jpg">
+      <img src="images/0303.jpg">
+      <img src="images/0404.jpg">
+      <img src="images/0606.webp">
+    </div>
+    <div class="col-3">
+      <img src="images/0606.webp">
+      <img src="images/0404.jpg">
+      <img src="images/0303.jpg">
+      <img src="images/0101.jpg">
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <hr>
+    <div class="row" style="background-color: #E5E4E4;">
+      <div class="col-lg-6">
+        <img src="images/205.jpg">
+      </div>
+      <div class="col-lg-6">
+        <h3><strong>SNEAKER</strong></h3>
+        <br>
+        <p>Sneaker! Who doesn’t love them? An Outfit can be perfect, but when the right sneaker
+      is missing, it’s beyond hope. And that is what we are here for. Selected with great
+      care we offer you only the best from the<span id="dots">...</span><span id="more"> best. Wether if Lifestyle Sneaker, Runner,
+      Basketball sneakers or Trainer - with our sneaker you look fantastic in every sphere
+      of life. Since 1980 sneaker revolutionized the market and even nowadays the trend continues.
+      No matter if you wear them to a suit, jeans oder classic for sports - nobody wants
+      to miss them. Because why should you wear uncomfortable leather shoes when you can wear
+      elegant and stylish sneakers? Through our passion for sneakers we have taken it very
+      seriously to offer you only the very best choice of sneakers to support your personal
+      style as much as we can. Because who wants to look like everyone else? So you are
+      looking for Nike Air Max 1, New Balance 1500, Nike Air Force 1, Nike Air Max 97,
+      Nike Air Max 98, Nike Air Vapormax Plus, New Balance 247, Adidas Ultra BOOST, Adidas
+      I-5923, Reebok Classic, Puma Suede, New Balance 997, Adidas NMD or an ASICS
+      SportStyle Sneaker like ASICS SportStyle Gel Lyte III...? You will find the sneaker you want.</span></p>
+      <button onclick="myFunction()" id="myBtn">Read more</button>
+      </div>
+    </div>
+  </div>
+  <!---Contact--->
+  <div class="contact" style="background:#565757 ">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6">
+          <h3 style="color:#ECF0F1">About Us</h3>
+          <p style="color:#ECF0F1">Sneakershop is the store with the largest range of sneakers in the capital and a unique selection for any style. Our store has been operating for more than 5 years and has more than 100,000 satisfied customers. And also you will find
+            high-quality and stylish clothes for every day, and our managers will select your street style for you.
+            <br>We provide a guarantee of up to one month for our entire range.
+          </p>
+        </div>
+        <div class="col-lg-3">
+          <h4 id="contacts" style="color:#ECF0F1"> Contact Us</h4>
+          <p style="color:#ECF0F1">+77074622199</p>
+          <h4 style="color:#ECF0F1"> Follow Us</h4>
+          <p style="color:#ECF0F1"><i class="fab fa-instagram"></i> Instagram: <br> <em>@sneakershop_astana</em></p>
+        </div>
+        <div class="col-lg-3">
+          <h4 style="color:#ECF0F1"><i class="fas fa-map-marker-alt"></i> Addresses</h4>
+          <ul>
+            <li><a href="https://go.2gis.com/925hf">&nbsp Imanova 41</a></li>
+            <li><a href="https://go.2gis.com/8jnsu">&nbsp Turkestan 8/1</a></li>
+          </ul>
+          <p style="color:#ECF0F1">Work Shedule: <br> 10:00-21:00</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!---footer--->
+  <footer>
+    <img src="images/001.jpg" width="100px">
+    <p> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+      &nbsp &nbsp &nbsp &nbsp
+      &#169; 2022 | SNEAKERSHOP | online store </p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>
